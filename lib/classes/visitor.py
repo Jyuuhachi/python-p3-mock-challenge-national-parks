@@ -3,28 +3,25 @@ class Visitor:
     def __init__(self, name):
         self._name = name
         self._national_parks = []
-
-    def __str__(self):
-        return f"Visitor object with name {self._name}"
         
-    def trips(self):
+    def trips(self):"""
         from classes.trip import Trip
         visitor_trips = []
         for trip in Trip.all_trips:
             if trip.visitor == self:
                 visitor_trips.append(trip)
-        return visitor_trips
+        return visitor_trips"""
     
-    def national_parks(self):
+    def national_parks(self):"""
         from classes.trip import Trip
         visitor_parks = []
         for trip in Trip.all_trips:
             for i in visitor_parks:
-                if trip.national_park.name == visitor_parks[i].name:
+                if trip.national_park._name == visitor_parks[i]._name:
                     continue
                 else:
                     visitor_parks.append(trip)
-        return visitor_parks
+        return visitor_parks"""
 
 
         

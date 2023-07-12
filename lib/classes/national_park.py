@@ -5,9 +5,6 @@ class NationalPark:
         self._trips = []
         self._visitors = []
         self.made = True
-
-    def __str__(self):
-        return f"NationalPark object with name {self._name}"
         
     @property
     def name(self):
