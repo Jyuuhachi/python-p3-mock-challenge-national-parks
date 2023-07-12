@@ -8,4 +8,7 @@ from classes.trip import Trip
 if __name__ == '__main__':
     print("HELLO! :) let's debug :vibing_potato:")
 
-    # ipdb.set_trace()
+    test_visitor = Visitor("matt hardy")
+    test_national_park = NationalPark("battery park")
+    test_trip = Trip(test_visitor, test_national_park, "25th", "30th")
+    ipdb.set_trace()
